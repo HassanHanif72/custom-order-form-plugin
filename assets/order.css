@@ -1,0 +1,168 @@
+ /* order form */
+ .order-submit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+	margin-bottom: 0 !important;
+}
+
+.order-submit .form-field {
+    width: 32.333%;
+}
+
+.total-amount {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.total-amount .form-field {
+    width: 48.333%;
+}
+.total-amount .form-field .total-calculation{
+	display: flex;
+    align-items: center;
+    gap: 10px;
+	justify-content: space-between;
+}
+.total-amount .form-field .total-calculation > p {
+    width: 22.333%;
+}
+.total-amount .form-field .total-calculation .price-show > p,.total-amount .form-field .total-calculation .discount-show > p,.total-amount .form-field .total-calculation .final-show > p {
+    display: flex;
+    align-items: center;
+	margin-bottom: 25px;
+}
+.total-amount .form-field .total-calculation .price-show,.total-amount .form-field .total-calculation .discount-show,.total-amount .form-field .total-calculation .final-show{
+	width: 77.333%;
+}
+.total-amount .form-field .total-calculation .price-show > p > .pound,.total-amount .form-field .total-calculation .discount-show > p > .pound,.total-amount .form-field .total-calculation .final-show > p > .pound {
+    width: 10%;
+    text-align: center;
+    background: #6c757d;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.total-amount .form-field .total-calculation .price-show > p > span, .total-amount .form-field .total-calculation .discount-show > p > span, .total-amount .form-field .total-calculation .final-show > p > span {
+    width: 90%;
+}
+.total-amount .form-field .total-calculation .final-show > p > .pound-final{
+	background: #28a745
+}
+.total-amount .form-field .total-calculation .discount-show > p > .pound-discount{
+	background: red
+}
+.total-amount .form-field > p > label{
+    margin-bottom: 15px;
+    display: block;
+    font-size: 16px;
+}
+.order-submit .form-field > p > label{
+	margin-bottom: 15px;
+    display: block;
+    font-size: 16px;
+	font-weight: 500;
+}
+.total-amount .form-field .total-calculation > p > label {
+    font-size: 18px;
+	font-weight: 500;
+}
+br{
+	display:none;
+}
+.color-price {
+    color: #6c757d;
+}
+.color-discount {
+    color: red;
+}
+.color-final{
+    color: #28a745;
+}
+input, select, textarea {
+    box-shadow: none !important;
+    padding: 11px 15px !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.btn-submit {
+    text-align: end;
+}
+.btn-submit > p{
+	position: relative;
+}
+.submit {
+    border: 2px solid #ffd117 !important;
+    padding: 8px 20px;
+    display: inline-block;
+    font-weight: 500;
+    background: #ffd117 !important;
+    color: #000000 !important;
+    transition: all ease-in-out 0.3s;
+    font-size: 1rem;
+    border-radius: 50px;
+    width: 49.333%;
+}
+.btn-submit .wpcf7-spinner {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.m-top{
+	margin-top: 33px;
+}
+input:focus, textarea:focus, select:focus {
+    border: 1px solid #ffd117 !important;
+}
+input#price{
+	font-size: 18px;
+    font-weight: 700;
+	color: #6c757d;
+}
+input#discount {
+	font-size: 18px;
+    font-weight: 700;
+	color: red;
+}
+input#finalPrice {
+	font-size: 18px;
+    font-weight: 700;
+	color: #28a745;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.order-submit {
+		display: block;
+	}
+	.order-submit .form-field {
+        width: 100%;
+    }
+	.total-amount {
+        display: block;
+	}
+	.total-amount .form-field {
+        width: 100%;
+    }
+	.total-amount .form-field .total-calculation {
+        display: block;
+	}
+	.total-amount .form-field .total-calculation .price-show, .total-amount .form-field .total-calculation .discount-show, .total-amount .form-field           .total-calculation .final-show {
+        width: 100%;
+    }
+	.total-amount .form-field .total-calculation > p {
+        width: 100%;
+    }
+	.total-amount .form-field .total-calculation .price-show > p > .pound, .total-amount .form-field .total-calculation .discount-show > p > .pound, 		.total-amount .form-field .total-calculation .final-show > p > .pound {
+        width: 12%;
+	}
+	.submit {
+        width: 100%;
+    }
+}
